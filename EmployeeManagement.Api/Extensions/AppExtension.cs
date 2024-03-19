@@ -14,12 +14,4 @@ public static class AppExtension
     {
         app.UseMiddleware<ErrorHandlerMiddleware>();
     }
-
-    public static void AddCorsConfig(this WebApplication app)
-    {
-        app.UseCors(x => x
-            .AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader());
-    }
 }
